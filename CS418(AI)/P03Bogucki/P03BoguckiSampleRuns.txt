@@ -1,0 +1,224 @@
+Max Bogucki | P03 Sample Runs
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 100000
+
+Cooling Rate: .0003
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 958
+Tour:
+Rose Hill -> Westview -> Wrigley -> Novi Grad -> Gulmira -> Puente -> Laura Creek -> Custer's Grove -> Zloda -> River's End -> Golden City -> Wheaton
+
+Number of new states tested: 38371
+Number of new states accepted: 24057
+
+Final solution distance: 573
+Tour:
+Custer's Grove -> Westview -> Laura Creek -> Puente -> Rose Hill -> Novi Grad -> Wrigley -> Wheaton -> Gulmira -> Zloda -> Golden City -> River's End
+
+Do you want to run the program again? (y/n): y
+
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 100000
+
+Cooling Rate: .0003
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 1104
+Tour:
+Wheaton -> Westview -> River's End -> Custer's Grove -> Rose Hill -> Gulmira -> Puente -> Novi Grad -> Wrigley -> Zloda -> Golden City -> Laura Creek
+
+Number of new states tested: 38371
+Number of new states accepted: 24033
+
+Final solution distance: 551
+Tour:
+Golden City -> Zloda -> Gulmira -> Wheaton -> Wrigley -> Rose Hill -> Puente -> Laura Creek -> Westview -> Novi Grad -> Custer's Grove -> River's End
+
+Do you want to run the program again? (y/n): y
+
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 100000
+
+Cooling Rate: .0003
+
+Please enter a file name (quit to end): fakefile.txt
+
+Error opening file: fakefile.txt. Please try again.
+
+Please enter a file name (quit to end): fakefile2.txt
+
+Error opening file: fakefile2.txt. Please try again.
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 1166
+Tour:
+Rose Hill -> Zloda -> Westview -> Gulmira -> Laura Creek -> Wheaton -> Custer's Grove -> Wrigley -> River's End -> Golden City -> Novi Grad -> Puente
+
+Number of new states tested: 38371
+Number of new states accepted: 24060
+
+Final solution distance: 551
+Tour:
+Wrigley -> Wheaton -> Gulmira -> Zloda -> Golden City -> River's End -> Custer's Grove -> Novi Grad -> Westview -> Laura Creek -> Puente -> Rose Hill
+
+Do you want to run the program again? (y/n): y
+
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 10000
+
+Cooling Rate: .001
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 1073
+Tour:
+Gulmira -> Zloda -> Puente -> Wrigley -> Golden City -> Westview -> Custer's Grove -> Wheaton -> Rose Hill -> Laura Creek -> Novi Grad -> River's End
+
+Number of new states tested: 9206
+Number of new states accepted: 4932
+
+Final solution distance: 573
+Tour:
+Zloda -> Golden City -> River's End -> Custer's Grove -> Westview -> Laura Creek -> Puente -> Rose Hill -> Novi Grad -> Wrigley -> Wheaton -> Gulmira
+
+Do you want to run the program again? (y/n): y
+
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 10
+
+Cooling Rate: 1
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 1164
+Tour:
+Laura Creek -> River's End -> Wrigley -> Rose Hill -> Wheaton -> Puente -> Golden City -> Gulmira -> Novi Grad -> Custer's Grove -> Zloda -> Westview
+
+Number of new states tested: 1
+Number of new states accepted: 0
+
+Final solution distance: 1164
+Tour:
+Laura Creek -> River's End -> Wrigley -> Rose Hill -> Wheaton -> Puente -> Golden City -> Gulmira -> Novi Grad -> Custer's Grove -> Zloda -> Westview
+
+Do you want to run the program again? (y/n): y
+
+
+*** TSP using Simulated Annealing ***
+
+Starting Temperature: 100000
+
+Cooling Rate: .005
+
+Please enter a file name (quit to end): Cities.txt
+
+Cities:
+       Gulmira 60 200
+       Puente 180 200
+       Wheaton 80 180
+       Rose Hill 140 180
+       Zloda 20 160
+       Wrigley 100 160
+       Laura Creek 200 160
+       Novi Grad 140 140
+       Golden City 40 120
+       Custer's Grove 100 120
+       Westview 180 100
+       River's End 60 80
+
+Initial solution distance: 895
+Tour:
+Puente -> Golden City -> Zloda -> Gulmira -> Wheaton -> Laura Creek -> Westview -> Rose Hill -> Custer's Grove -> River's End -> Wrigley -> Novi Grad
+
+Number of new states tested: 2297
+Number of new states accepted: 1434
+
+Final solution distance: 551
+Tour:
+Rose Hill -> Puente -> Laura Creek -> Westview -> Novi Grad -> Custer's Grove -> River's End -> Golden City -> Zloda -> Gulmira -> Wheaton -> Wrigley
+
+Do you want to run the program again? (y/n): n

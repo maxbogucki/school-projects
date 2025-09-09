@@ -1,0 +1,60 @@
+*** P02 Bulls and Cows ***
+
+************* New Game *************
+
+Number to Guess: 7459
+
+        Guesses entered must be digits 0-9, 4 digits long, no repetition
+
+        Enter Guess: abcd
+                Error: Guess can only contain digits -- try again!
+
+        Enter Guess: 123
+                Error: Guess must be 4 digits -- try again!
+
+        Enter Guess: 1123
+                Error: Digits can not be repeated -- try again!
+
+        Enter Guess: 1234
+                Guess #1: Bulls 0 Cows 1
+
+        Enter Guess: 0476
+                Guess #2: Bulls 1 Cows 1
+
+        Enter Guess: 7495
+                Guess #3: Bulls 2 Cows 2
+
+        Enter Guess: 7459
+                Guess #4: Bulls 4 Cows 0
+
+        *** YOU WIN! ***
+
+Enter Y to play again (anything else to end): y
+
+************* New Game *************
+
+Number to Guess: 4709
+
+        Guesses entered must be digits 0-9, 4 digits long, no repetition
+
+        Enter Guess: 321
+                Error: Guess must be 4 digits -- try again!
+
+        Enter Guess: abcde
+                Error: Guess can only contain digits -- try again!
+
+        Enter Guess: 53134
+                Error: Guess must be 4 digits -- try again!
+
+        Enter Guess: 1122
+                Error: Digits can not be repeated -- try again!
+
+        Enter Guess: 4009
+                Error: Digits can not be repeated -- try again!
+
+        Enter Guess: 4709
+                Guess #1: Bulls 4 Cows 0
+
+        *** YOU WIN! ***
+
+Enter Y to play again (anything else to end): .

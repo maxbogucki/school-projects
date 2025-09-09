@@ -1,0 +1,10 @@
+Please input file name: graph6.txt
+
+graph6.txt Contents:
+
+0 10
+10 0
+
+*********Output according to graph6.txt contents:
+
+Optimal Tour Cost = [ 20, <1,2,1> ]

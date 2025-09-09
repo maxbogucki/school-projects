@@ -1,0 +1,4 @@
+Enter Filename: file5.txt
+File successfully opened
+
+Closest points are: (5.00, 0.00) and (5.01, 0.00) with distance = 0.010000

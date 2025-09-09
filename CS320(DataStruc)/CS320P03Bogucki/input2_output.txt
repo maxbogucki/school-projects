@@ -1,0 +1,12 @@
+Please input file name: input2.txt
+
+input2.txt Contents:
+
+0 10 15 20
+5 0 9 10
+6 INF 0 12
+8 8 9 0
+
+*********Output according to input2.txt contents:
+
+Optimal Tour Cost = [ 35, <1,2,4,3,1> ]

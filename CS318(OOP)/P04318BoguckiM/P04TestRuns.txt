@@ -1,0 +1,58 @@
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: 10
+
+Enter the number of minutes: 5
+
+Dorothy has gathered 1019 emeralds!
+
+
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: 3
+
+Enter the number of minutes: 10
+
+Dorothy has gathered 1032 emeralds!
+
+
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: 20
+
+Enter the number of minutes: 20
+
+Dorothy has gathered 3317 emeralds!
+
+
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: -1
+Error: Number of baskets can't be negative
+
+Enter the number of baskets: 3
+
+Enter the number of minutes: -10
+Error: Number of minutes can't be negative
+
+Enter the number of minutes: 3
+
+Dorothy has gathered 504 emeralds!
+
+
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: 0
+
+Enter the number of minutes: 100
+
+Dorothy has gathered 0 emeralds!
+
+
+**** Dorothy and Emeralds ****
+
+Enter the number of baskets: 100
+
+Enter the number of minutes: 0
+
+Dorothy has gathered 0 emeralds!

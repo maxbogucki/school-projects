@@ -1,0 +1,4 @@
+Enter Filename: file7.txt
+File successfully opened
+
+Closest points are: (8.09, 1.93) and (8.59, 1.74) with distance = 0.537469

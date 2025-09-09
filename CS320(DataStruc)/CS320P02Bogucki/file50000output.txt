@@ -1,0 +1,4 @@
+Enter Filename: file50000.txt
+File successfully opened
+
+Closest points are: (64229.30, 40122.70) and (64229.30, 40125.70) with distance = 3.000000

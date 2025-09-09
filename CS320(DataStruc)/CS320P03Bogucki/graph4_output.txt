@@ -1,0 +1,11 @@
+Please input file name: graph4.txt
+
+graph4.txt Contents:
+
+0 0 0
+0 0 0
+0 0 0
+
+*********Output according to graph4.txt contents:
+
+Optimal Tour Cost = [ 0, <1,2,3,1> ]
