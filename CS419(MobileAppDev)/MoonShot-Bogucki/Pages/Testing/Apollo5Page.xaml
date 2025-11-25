@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo5Page"
+             Title="Apollo 5">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo5.png" />
+        <Label 
+            Text="Launched on January 22, 1968, Apollo 5 was the first unmanned test flight of the Lunar Module (LM). The mission tested the LM's descent and ascent engines in Earth orbit, proving the spacecraft could perform the critical maneuvers needed for a lunar landing. This successful test cleared the way for crewed LM flights."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

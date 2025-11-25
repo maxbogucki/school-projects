@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Landing.Apollo11Page"
+             Title="Apollo 11">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo11.png" />
+        <Label 
+            Text="Apollo 11 achieved humanity's greatest space exploration milestone on July 20, 1969, when Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon while Michael Collins orbited above. Armstrong's famous words, 'That's one small step for man, one giant leap for mankind,' marked the culmination of eight years of effort. They spent 21.5 hours on the lunar surface, collecting samples and conducting experiments."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

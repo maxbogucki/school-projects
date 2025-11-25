@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Advanced.AdvancedPage"
+             Title="Advanced Missions">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- ## ADVANCED MISSIONS (Apollo 15-17) ## -->
+        <Button Text="Apollo 15" Clicked="OnMissionClicked" CommandParameter="Apollo15" HorizontalOptions="Fill" />
+        <Button Text="Apollo 16" Clicked="OnMissionClicked" CommandParameter="Apollo16" HorizontalOptions="Fill" />
+        <Button Text="Apollo 17" Clicked="OnMissionClicked" CommandParameter="Apollo17" HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

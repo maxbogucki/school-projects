@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MoonShot_Bogucki.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MoonShot_Bogucki"
+    Title="Apollo Missions"
+    FlyoutBehavior="Disabled">
+    <TabBar>
+        <!-- Home -->
+        <ShellContent 
+            Title="Home" 
+            Icon="home_icon.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <!-- Testing / Early Missions (Apollo 1–10) -->
+        <ShellContent 
+            Title="Testing"
+            Icon="testing_icon.png"
+            ContentTemplate="{DataTemplate local:Pages.Testing.TestingPage}"
+            Route="TestingPage" />
+        <!-- Lunar Landing Missions -->
+        <ShellContent 
+            Title="Landings"
+            Icon="landing_icon.png"
+            ContentTemplate="{DataTemplate local:Pages.Landing.LandingPage}"
+            Route="LandingPage" />
+        <!-- Advanced / Late Missions -->
+        <ShellContent 
+            Title="Advanced"
+            Icon="advanced_icon.png"
+            ContentTemplate="{DataTemplate local:Pages.Advanced.AdvancedPage}"
+            Route="AdvancedPage" />
+    </TabBar>
+</Shell>

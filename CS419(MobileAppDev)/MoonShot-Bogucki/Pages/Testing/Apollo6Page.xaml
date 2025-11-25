@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo6Page"
+             Title="Apollo 6">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo6.png" />
+        <Label 
+            Text="Apollo 6, launched on April 4, 1968, was the second and final unmanned test of the Saturn V rocket. Despite experiencing severe vibration issues (pogo oscillation) and engine failures, the mission still achieved its primary objectives. Engineers used data from this flight to fix the problems before crewed missions began."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

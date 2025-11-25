@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo8Page"
+             Title="Apollo 8">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo8.png" />
+        <Label 
+            Text="Apollo 8 made history on December 21, 1968, as the first crewed mission to leave Earth orbit, reach the Moon, orbit it, and return safely. Astronauts Frank Borman, James Lovell, and William Anders became the first humans to see the far side of the Moon and captured the iconic 'Earthrise' photograph. Their Christmas Eve broadcast from lunar orbit was watched by millions worldwide."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

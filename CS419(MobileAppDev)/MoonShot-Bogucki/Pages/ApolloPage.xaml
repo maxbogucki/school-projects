@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.ApolloPage"
+             BackgroundColor="White" Title="">
+    <ScrollView>
+        <VerticalStackLayout Padding="0" Spacing="0">
+            <Border BackgroundColor="#020f1f" Padding="10" Stroke="#020f1f" StrokeThickness="2"
+                    HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+                <StackLayout Padding="10" Spacing="5">
+                    <Label Text="Let's Explore" TextColor="White" FontSize="32" FontAttributes="Bold" />
+                    <Label Text="The Apollo Program" TextColor="White" FontSize="24" />
+                </StackLayout>
+            </Border>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Label Text="The Apollo program was a series of NASA missions that successfully landed humans on the Moon between 1969 and 1972. From early testing to advanced lunar exploration, these 15 missions represent humanity's greatest achievement in space exploration." 
+                    FontSize="20"
+                    LineBreakMode="WordWrap"/>
+
+                <!-- ## TESTING MISSIONS ## -->
+                <Label Text="Testing Missions" FontSize="18" FontAttributes="Bold" />
+                <Label Text="The early Apollo missions focused on testing equipment and procedures, preparing the way for lunar landings. These missions included unmanned tests and the first crewed flights."
+                    FontSize="16"
+                    LineBreakMode="WordWrap" />
+                <Button Text="Apollo 1" Clicked="OnMissionClicked" CommandParameter="Apollo1" HorizontalOptions="Fill" />
+                <Button Text="Apollo 4" Clicked="OnMissionClicked" CommandParameter="Apollo4" HorizontalOptions="Fill" />
+                <Button Text="Apollo 5" Clicked="OnMissionClicked" CommandParameter="Apollo5" HorizontalOptions="Fill" />
+                <Button Text="Apollo 6" Clicked="OnMissionClicked" CommandParameter="Apollo6" HorizontalOptions="Fill" />
+                <Button Text="Apollo 7" Clicked="OnMissionClicked" CommandParameter="Apollo7" HorizontalOptions="Fill" />
+                <Button Text="Apollo 8" Clicked="OnMissionClicked" CommandParameter="Apollo8" HorizontalOptions="Fill" />
+                <Button Text="Apollo 9" Clicked="OnMissionClicked" CommandParameter="Apollo9" HorizontalOptions="Fill" />
+                <Button Text="Apollo 10" Clicked="OnMissionClicked" CommandParameter="Apollo10" HorizontalOptions="Fill" />
+
+                <!-- ## LANDING MISSIONS ## -->
+                <Label Text="Landing Missions" FontSize="18" FontAttributes="Bold" />
+                <Label Text="These historic missions achieved the incredible feat of landing humans on the Moon. From Armstrong's first steps to the challenges of Apollo 13, these missions defined the Apollo program."
+                    FontSize="16"
+                    LineBreakMode="WordWrap" />
+                <Button Text="Apollo 11" Clicked="OnMissionClicked" CommandParameter="Apollo11" HorizontalOptions="Fill" />
+                <Button Text="Apollo 12" Clicked="OnMissionClicked" CommandParameter="Apollo12" HorizontalOptions="Fill" />
+                <Button Text="Apollo 13" Clicked="OnMissionClicked" CommandParameter="Apollo13" HorizontalOptions="Fill" />
+                <Button Text="Apollo 14" Clicked="OnMissionClicked" CommandParameter="Apollo14" HorizontalOptions="Fill" />
+
+                <!-- ## ADVANCED MISSIONS ## -->
+                <Label Text="Advanced Missions" FontSize="18" FontAttributes="Bold" />
+                <Label Text="The final three Apollo missions featured extended stays on the Moon and the Lunar Roving Vehicle, allowing astronauts to explore farther and conduct more complex scientific experiments."
+                    FontSize="16"
+                    LineBreakMode="WordWrap" />
+                <Button Text="Apollo 15" Clicked="OnMissionClicked" CommandParameter="Apollo15" HorizontalOptions="Fill" />
+                <Button Text="Apollo 16" Clicked="OnMissionClicked" CommandParameter="Apollo16" HorizontalOptions="Fill" />
+                <Button Text="Apollo 17" Clicked="OnMissionClicked" CommandParameter="Apollo17" HorizontalOptions="Fill" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

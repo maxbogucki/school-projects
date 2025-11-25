@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.TestingPage"
+             Title="Testing Missions">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- ## TESTING MISSIONS (Apollo 1-10) ## -->
+        <Button Text="Apollo 1" Clicked="OnMissionClicked" CommandParameter="Apollo1" HorizontalOptions="Fill" />
+        <Button Text="Apollo 4" Clicked="OnMissionClicked" CommandParameter="Apollo4" HorizontalOptions="Fill" />
+        <Button Text="Apollo 5" Clicked="OnMissionClicked" CommandParameter="Apollo5" HorizontalOptions="Fill" />
+        <Button Text="Apollo 6" Clicked="OnMissionClicked" CommandParameter="Apollo6" HorizontalOptions="Fill" />
+        <Button Text="Apollo 7" Clicked="OnMissionClicked" CommandParameter="Apollo7" HorizontalOptions="Fill" />
+        <Button Text="Apollo 8" Clicked="OnMissionClicked" CommandParameter="Apollo8" HorizontalOptions="Fill" />
+        <Button Text="Apollo 9" Clicked="OnMissionClicked" CommandParameter="Apollo9" HorizontalOptions="Fill" />
+        <Button Text="Apollo 10" Clicked="OnMissionClicked" CommandParameter="Apollo10" HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo4Page"
+             Title="Apollo 4">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo4.png" />
+        <Label 
+            Text="Apollo 4 was the first unmanned test flight of the Saturn V rocket, launched on November 9, 1967. This mission successfully demonstrated the massive rocket's capability to reach Earth orbit and tested the Command Module's heat shield during reentry at lunar return velocities. It was a crucial step toward proving the hardware needed for a Moon landing."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

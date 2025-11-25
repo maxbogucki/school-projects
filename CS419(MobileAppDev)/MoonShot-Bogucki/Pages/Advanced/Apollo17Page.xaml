@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Advanced.Apollo17Page"
+             Title="Apollo 17">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo17.png" />
+        <Label 
+            Text="Apollo 17, launched December 7, 1972, was the final Apollo mission to the Moon. Commander Eugene Cernan, geologist Harrison Schmitt (the only scientist to walk on the Moon), and Ronald Evans conducted the longest lunar landing mission. They spent 75 hours on the surface, drove the rover 22 miles, and collected 243 pounds of samples. Cernan's final words from the Moon, 'We leave as we came, and God willing, as we shall return,' closed humanity's first chapter of lunar exploration."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
