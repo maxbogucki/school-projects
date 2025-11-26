@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Advanced.Apollo15Page"
+             Title="Apollo 15">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo15.png" />
+        <Label 
+            Text="Apollo 15, launched July 26, 1971, was the first of the extended 'J-missions' featuring the Lunar Roving Vehicle (LRV). Astronauts David Scott and James Irwin drove the rover 17.5 miles across the Hadley-Apennine region during three EVAs totaling 18.5 hours, while Alfred Worden conducted orbital experiments. Scott's demonstration of Galileo's theory by dropping a hammer and feather simultaneously became an iconic moment in science history."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

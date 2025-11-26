@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Landing.LandingPage"
+             Title="Landing Missions">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- ## LUNAR LANDING MISSIONS ## -->
+        <Button Text="Apollo 11" Clicked="OnMissionClicked" CommandParameter="Apollo11" HorizontalOptions="Fill" />
+        <Button Text="Apollo 12" Clicked="OnMissionClicked" CommandParameter="Apollo12" HorizontalOptions="Fill" />
+        <Button Text="Apollo 13" Clicked="OnMissionClicked" CommandParameter="Apollo13" HorizontalOptions="Fill" />
+        <Button Text="Apollo 14" Clicked="OnMissionClicked" CommandParameter="Apollo14" HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo10Page"
+             Title="Apollo 10">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo10.png" />
+        <Label 
+            Text="Apollo 10, launched May 18, 1969, was the 'dress rehearsal' for the Moon landing. Astronauts Thomas Stafford, John Young, and Eugene Cernan flew to the Moon, where Stafford and Cernan piloted the Lunar Module to within 8.4 miles of the lunar surface. This final test verified all procedures and equipment before Apollo 11's historic landing attempt just two months later."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Landing.Apollo13Page"
+             Title="Apollo 13">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo13.png" />
+        <Label 
+            Text="Apollo 13, launched April 11, 1970, became known as a 'successful failure.' When an oxygen tank exploded 200,000 miles from Earth, the mission to land on the Moon was aborted. Astronauts Jim Lovell, Jack Swigert, and Fred Haise, along with Mission Control, worked heroically to jury-rig solutions to bring the crew safely home. Their survival against overwhelming odds remains one of NASA's finest hours."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

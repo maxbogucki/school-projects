@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Landing.Apollo14Page"
+             Title="Apollo 14">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo14.png" />
+        <Label 
+            Text="Apollo 14, launched January 31, 1971, returned the Apollo program to lunar landings after the Apollo 13 incident. Commander Alan Shepard, the first American in space, became the fifth person to walk on the Moon alongside Edgar Mitchell, while Stuart Roosa orbited above. Shepard famously hit two golf balls on the lunar surface, and the mission successfully explored the Fra Mauro highlands, collecting 94 pounds of lunar samples."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

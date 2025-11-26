@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Testing.Apollo1Page"
+             Title="Apollo 1">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo1.png" />
+        <Label 
+            Text="Apollo 1 was planned to be the first crewed mission of the Apollo program. Tragically, a cabin fire during a launch rehearsal test on January 27, 1967, claimed the lives of astronauts Gus Grissom, Ed White, and Roger Chaffee. This devastating loss led to major design and engineering changes that made subsequent missions safer."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

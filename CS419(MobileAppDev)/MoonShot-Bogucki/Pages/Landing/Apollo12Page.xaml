@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Bogucki.Pages.Landing.Apollo12Page"
+             Title="Apollo 12">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="apollo12.png" />
+        <Label 
+            Text="Launched on November 14, 1969, Apollo 12 demonstrated precision landing capabilities by touching down just 600 feet from the Surveyor 3 probe. Astronauts Pete Conrad and Alan Bean conducted two moonwalks totaling nearly 8 hours while Richard Gordon orbited above. Despite being struck by lightning twice during launch, the mission was a complete success and retrieved parts from Surveyor 3 for analysis."
+            FontSize="18"
+            LineBreakMode="WordWrap"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

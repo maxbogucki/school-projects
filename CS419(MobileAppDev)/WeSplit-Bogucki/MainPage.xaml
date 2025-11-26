@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeSplit_Bogucki.MainPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Spacing="0">
+
+        <!-- Green Header -->
+        <Border BackgroundColor="#006400" 
+                Padding="20"
+                StrokeThickness="0">
+            <Label Text="WeSplit"
+                   TextColor="White"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Border>
+
+        <!-- Main Content -->
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+
+                <!-- Total Check Amount -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Enter total check amount:"
+                           FontSize="16"
+                           TextColor="Black"/>
+                    <Border Stroke="LightGray" 
+                            BackgroundColor="White"
+                            Padding="8"
+                            StrokeThickness="1">
+                        <Entry x:Name="MealCostEntry"
+                               Placeholder="0.00"
+                               Keyboard="Numeric"
+                               TextChanged="OnMealCostChanged"
+                               FontSize="16"
+                               TextColor="Gray"/>
+                    </Border>
+                </VerticalStackLayout>
+
+                <!-- Tip Percentage -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Select tip percentage:"
+                           FontSize="16"
+                           TextColor="Black"/>
+                    <Border Stroke="LightGray" 
+                            BackgroundColor="White"
+                            Padding="8"
+                            StrokeThickness="1">
+                        <Picker x:Name="TipPicker"
+                                Title="Choose tip %"
+                                SelectedIndexChanged="OnTipChanged"
+                                FontSize="16"
+                                TextColor="Black">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>10%</x:String>
+                                    <x:String>15%</x:String>
+                                    <x:String>20%</x:String>
+                                    <x:String>25%</x:String>
+                                    <x:String>30%</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Border>
+                </VerticalStackLayout>
+
+                <!-- Number of People -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Number of people:"
+                           FontSize="16"
+                           TextColor="Black"/>
+
+                    <HorizontalStackLayout Spacing="10" 
+                                          HorizontalOptions="Start">
+                        <Button x:Name="DecrementButton"
+                                Text="-"
+                                FontSize="24"
+                                WidthRequest="80"
+                                HeightRequest="50"
+                                BackgroundColor="LightGray"
+                                TextColor="Black"
+                                Clicked="OnDecrementClicked"/>
+
+                        <Button x:Name="IncrementButton"
+                                Text="+"
+                                FontSize="24"
+                                WidthRequest="80"
+                                HeightRequest="50"
+                                BackgroundColor="LightGray"
+                                TextColor="Black"
+                                Clicked="OnIncrementClicked"/>
+                    </HorizontalStackLayout>
+
+                    <Label x:Name="PeopleCountLabel"
+                           Text="1 person"
+                           FontSize="16"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           Margin="0,10,0,0"/>
+                </VerticalStackLayout>
+
+                <!-- Calculate Button -->
+                <Button Text="Calculate"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        BackgroundColor="#006400"
+                        TextColor="White"
+                        CornerRadius="8"
+                        HeightRequest="55"
+                        Margin="0,20,0,0"
+                        Clicked="OnCalculateClicked"/>
+
+                <!-- Result -->
+                <Label x:Name="ResultLabel"
+                       Text="Each person pays: $0.00"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#0000CD"
+                       HorizontalOptions="Center"
+                       Margin="0,20,0,0"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
