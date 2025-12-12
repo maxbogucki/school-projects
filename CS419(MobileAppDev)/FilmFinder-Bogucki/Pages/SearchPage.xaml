@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FilmFinder_Bogucki.Pages.SearchPage"
+             Title="Film Finder">
+
+    <Grid RowDefinitions="Auto,*" BackgroundColor="#F5F5F5">
+
+        <!-- Header -->
+        <Grid Grid.Row="0" BackgroundColor="#512DA8" Padding="20,15">
+            <Label Text="Film Finder" 
+                   TextColor="White" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <!-- Search Section -->
+                <Border BackgroundColor="White" 
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 8"
+                        Padding="15">
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Opacity="0.1" Radius="10" Offset="0,2"/>
+                    </Border.Shadow>
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Search for Movies" 
+                               FontSize="18" 
+                               FontAttributes="Bold"
+                               TextColor="#333333"/>
+
+                        <Entry x:Name="TitleEntry"
+                               Placeholder="Enter movie title"
+                               PlaceholderColor="#999999"
+                               TextColor="#333333"
+                               BackgroundColor="#F0F0F0"/>
+
+                        <Entry x:Name="YearEntry"
+                               Placeholder="Enter year (optional)"
+                               PlaceholderColor="#999999"
+                               TextColor="#333333"
+                               Keyboard="Numeric"
+                               BackgroundColor="#F0F0F0"/>
+
+                        <Button x:Name="SearchButton"
+                                Text="Search"
+                                BackgroundColor="#512DA8"
+                                TextColor="White"
+                                CornerRadius="5"
+                                Clicked="OnSearchClicked"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Status Message -->
+                <Label x:Name="StatusLabel"
+                       HorizontalOptions="Center"
+                       TextColor="#666666"
+                       IsVisible="False"/>
+
+                <!-- Results List -->
+                <CollectionView x:Name="MoviesCollectionView"
+                                SelectionMode="Single"
+                                SelectionChanged="OnMovieSelected">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="White"
+                                    StrokeThickness="0"
+                                    StrokeShape="RoundRectangle 8"
+                                    Margin="0,5"
+                                    Padding="15">
+                                <Border.Shadow>
+                                    <Shadow Brush="Black" Opacity="0.1" Radius="10" Offset="0,2"/>
+                                </Border.Shadow>
+                                <Grid ColumnDefinitions="80,*" ColumnSpacing="15">
+
+                                    <!-- Poster Thumbnail -->
+                                    <Border Grid.Column="0"
+                                            StrokeThickness="0"
+                                            StrokeShape="RoundRectangle 5"
+                                            HeightRequest="100"
+                                            WidthRequest="70"
+                                            VerticalOptions="Start">
+                                        <Image Source="{Binding Poster}"
+                                               Aspect="AspectFill"/>
+                                    </Border>
+
+                                    <!-- Movie Info -->
+                                    <VerticalStackLayout Grid.Column="1" 
+                                                        Spacing="5"
+                                                        VerticalOptions="Center">
+                                        <Label Text="{Binding Title}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               TextColor="#333333"
+                                               LineBreakMode="WordWrap"/>
+                                        <Label Text="{Binding Year}"
+                                               FontSize="14"
+                                               TextColor="#666666"/>
+                                        <Label Text="{Binding Type}"
+                                               FontSize="12"
+                                               TextColor="#999999"
+                                               TextTransform="Uppercase"/>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
