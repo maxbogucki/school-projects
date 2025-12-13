@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HighProtein_Bogucki.Pages.AboutPage"
+             Title="" BackgroundColor="White">
+    <!-- Toolbar Items -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Home"
+                  IconImageSource="home.png"
+                  Clicked="OnHomeClicked"
+                  Order="Primary"
+                  Priority="0" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="Teal" StrokeThickness="1" BackgroundColor="Teal" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <Label Text="About the App" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+        </Border>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Label Text="This cookbook was developed by its authors at the University of Alberta" FontSize="18"/>
+                <Label Text="The High Protein Cookbook for Muscle Health During Cancer Treatment is Copyright by Hillary Wilson; Anissa Armet; and Carla pradio is licensed under a Creative Commons Attribution 4.0 International License, excecpt where otherwise noted." FontSize="18"/>
+
+                <Image Source="ua_logo_green.png" Aspect="AspectFit" HorizontalOptions="Center"/>
+                <Image Source="hnru.png" Aspect="AspectFit" HorizontalOptions="Center"/>
+                <Image Source="prado_lab.jpg" Aspect="AspectFit" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

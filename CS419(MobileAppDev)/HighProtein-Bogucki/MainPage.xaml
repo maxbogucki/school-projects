@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HighProtein_Bogucki.MainPage"
+             Title="" BackgroundColor="White">
+
+   <!-- Toolbar Items -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="About"
+                     IconImageSource="info.png"
+                     Clicked="OnAboutClicked"
+                     Order="Primary"
+                     Priority="0" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="Teal" StrokeThickness="1" BackgroundColor="Teal" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <Label Text="High Protein Cookbook" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+        </Border>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Image Source="https://wp.elmhurst.edu/highprotein/wp-content/uploads/sites/384/2025/11/Deviled-Eggs-1152x1536-1-480x460.jpg" HeightRequest="200" Aspect="AspectFill" />
+
+                <Label Text="Nutrition is powerful! This cookbook is particularly focused on muscle health, which is related to the amount and type of protein in our diets." FontSize="18"/>
+                <Label Text="Enjoy the delicious 60+ recipes as a constant reminder that Muscle Matters!" FontSize="18"/>
+
+                <Button x:Name="BreakfastButton" Text="Breakfast" FontSize="18" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Fill" Clicked="OnBreakfastClicked"/>
+                <Button x:Name="LunchButton" Text="Lunch" FontSize="18" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Fill" Clicked="OnLunchClicked"/>
+                <Button x:Name="DinnerButton" Text="Dinner" FontSize="18" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Fill" Clicked="OnDinnerClicked"/>
+                <Button x:Name="SnacksButton" Text="Snacks" FontSize="18" BackgroundColor="Teal" TextColor="White" HorizontalOptions="Fill" Clicked="OnSnacksClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
