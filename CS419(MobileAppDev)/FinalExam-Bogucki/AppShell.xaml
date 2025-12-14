@@ -12,7 +12,7 @@
         Shell.TabBarForegroundColor="DarkOrange"
         Shell.TabBarUnselectedColor="Black">
 
-        <Tab Title="Trave" Icon="travel_icon.png">
+        <Tab Title="Travel" Icon="travel_icon.png">
             <ShellContent
                 Title="Travel"
                 ContentTemplate="{DataTemplate local:MainPage}" /> 

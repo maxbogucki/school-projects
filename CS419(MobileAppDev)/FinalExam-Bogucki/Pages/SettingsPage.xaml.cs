@@ -2,16 +2,16 @@ namespace FinalExam_Bogucki.Pages;
 
 public partial class SettingsPage : ContentPage
 {
-	public SettingsPage()
-	{
-		InitializeComponent();
-	}
+    public SettingsPage()
+    {
+        InitializeComponent();
+    }
 
     protected override void OnAppearing()
     {
         base.OnAppearing();
 
-        if (Preferences.ContainsKey("DestinationCity") && Preferences.ContainsKey("OriginCity"))
+        if (Preferences.ContainsKey("DestinationCity") && Preferences.ContainsKey("DestinationCountry"))
         {
             ResetDestinationButton.BackgroundColor = Colors.Firebrick;
             ResetDestinationButton.TextColor = Colors.White;
@@ -20,13 +20,14 @@ public partial class SettingsPage : ContentPage
 
         if (Preferences.ContainsKey("NewsCategory"))
         {
-            ResetDestinationButton.BackgroundColor = Colors.Firebrick;
-            ResetDestinationButton.TextColor = Colors.White;
-            ResetDestinationButton.IsEnabled = true;
+            ResetNewsCategoryButton.BackgroundColor = Colors.Firebrick;
+            ResetNewsCategoryButton.TextColor = Colors.White;
+            ResetNewsCategoryButton.IsEnabled = true;
 
             string NewsCategory = Preferences.Get("NewsCategory", string.Empty);
 
-            switch (NewsCategory) {
+            switch (NewsCategory)
+            {
                 case "Business":
                     BusinessSwitch.ThumbColor = Colors.DarkOrange;
                     BusinessSwitch.IsToggled = true;
@@ -104,9 +105,9 @@ public partial class SettingsPage : ContentPage
                 cat.IsEnabled = true;
             }
 
-            ResetDestinationButton.BackgroundColor = Colors.LightGray;
-            ResetDestinationButton.TextColor = Colors.Black;
-            ResetDestinationButton.IsEnabled = false;
+            ResetNewsCategoryButton.BackgroundColor = Colors.LightGray;
+            ResetNewsCategoryButton.TextColor = Colors.Black;
+            ResetNewsCategoryButton.IsEnabled = false;
         }
     }
 
@@ -114,7 +115,7 @@ public partial class SettingsPage : ContentPage
     {
         var category = sender as Switch;
 
-        if(category == null)
+        if (category == null)
         {
             return;
         }
@@ -143,9 +144,9 @@ public partial class SettingsPage : ContentPage
             category.ThumbColor = Colors.DarkOrange;
             category.IsEnabled = false;
 
-            ResetDestinationButton.BackgroundColor = Colors.Firebrick;
-            ResetDestinationButton.TextColor = Colors.White;
-            ResetDestinationButton.IsEnabled = true;
+            ResetNewsCategoryButton.BackgroundColor = Colors.Firebrick;
+            ResetNewsCategoryButton.TextColor = Colors.White;
+            ResetNewsCategoryButton.IsEnabled = true;
 
             // save the preference for the active switch
             if (category == BusinessSwitch)

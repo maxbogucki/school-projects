@@ -11,30 +11,29 @@ public partial class WeatherPage : ContentPage
 		Shell.SetTitleColor(this, Colors.White);
     }
 
-	protected async override void OnAppearing()
-	{
-		base.OnAppearing();
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
 
-		WeatherLabel.IsVisible = false;
+        BusyIndicator.IsVisible = true;
+        BusyIndicator.IsRunning = true;
+        WeatherLabel.IsVisible = false;
 
-		if (Preferences.ContainsKey("DestinationCity") && Preferences.ContainsKey("DestinationCountry"))
-		{
-			string DestinationCity = Preferences.Get("DestinationCity", string.Empty);
-
-			bool lat = LatitudeDictionary.TryGetValue(Preferences.Get("Destination", string.Empty), out double Latitude);
-			bool lon = LongitudeDictionary.TryGetValue(Preferences.Get("Destination", string.Empty), out double Longitude);
-
-            if (lat && lon)
-            {
-				await GetWeatherData(Latitude, Longitude);
-            } else
-			{
-				await Shell.Current.GoToAsync("..");
-			}
+        if (!Preferences.ContainsKey("DestinationCity"))
+        {
+            return;
         }
+
+        string city = Preferences.Get("DestinationCity", string.Empty);
+
+        bool hasLat = LatitudeDictionary.TryGetValue(city, out double latitude);
+        bool hasLon = LongitudeDictionary.TryGetValue(city, out double longitude);
+
+        await GetWeatherData(latitude, longitude);
     }
 
-	private async Task GetWeatherData(double latitude, double longitude)
+
+    private async Task GetWeatherData(double latitude, double longitude)
 	{
         // Show the ActivityIndicator when the page starts loading
 		BusyIndicator.IsRunning = true;
