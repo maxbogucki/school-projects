@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HighProtein_Bogucki.Pages.RecipeDetailsPage">
+             x:Class="HighProtein_Bogucki.Pages.RecipeDetailsPage"
+             Title="" BackgroundColor="White">
+    <!-- Toolbar Items -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share"
+                 IconImageSource="share.png"
+                 Clicked="OnShareClicked"
+                 Order="Primary"
+                 Priority="5" />
+        <ToolbarItem Text="Favorite"
+                 IconImageSource="heart.png"
+                 Clicked="OnFavoriteClicked"
+                 Order="Primary"
+                 Priority="10" />
+        <ToolbarItem Text="Home"
+                 IconImageSource="home.png"
+                 Clicked="OnHomeClicked"
+                 Order="Primary"
+                 Priority="15" />
+    </ContentPage.ToolbarItems>
+
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Border Stroke="Teal" StrokeThickness="1" BackgroundColor="Teal" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <Label Text="Recipe Details" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+        </Border>
+        <ScrollView>
+            <VerticalStackLayout Padding="5" Spacing="5">
+                <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="Teal" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <WebView x:Name="RecipeWebView" Source="{Binding URL}"
+                         Navigating="OnNavigating"
+                         Navigated="OnNavigated"/>
+            </VerticalStackLayout>
+        </ScrollView>
     </VerticalStackLayout>
-</ContentView>
+</ContentPage>

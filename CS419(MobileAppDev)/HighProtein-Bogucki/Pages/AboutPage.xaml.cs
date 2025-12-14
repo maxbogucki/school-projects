@@ -9,6 +9,6 @@ public partial class AboutPage : ContentPage
 
     private async void OnHomeClicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//HomePage");
+        await Shell.Current.GoToAsync("//MainPage");
     }
 }
