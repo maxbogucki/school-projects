@@ -2,7 +2,7 @@
 {
     public class NewsService
     {
-        private const string ApiKey = "";
+        private const string ApiKey = "a7bea445313d4eb885b260718554a049";
         private const string BaseUrl = "https://newsapi.org/v2/top-headlines";
 
         private readonly HttpClient _httpClient;

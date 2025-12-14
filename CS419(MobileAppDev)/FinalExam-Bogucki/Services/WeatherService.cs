@@ -5,7 +5,7 @@ namespace FinalExam_Bogucki.Services
 {
     public class WeatherService
     {
-        private const string ApiKey = "";
+        private const string ApiKey = "cc401ee30125bbf0df8ab9374628ce25";
         private const string BaseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
         private readonly HttpClient _httpClient;
