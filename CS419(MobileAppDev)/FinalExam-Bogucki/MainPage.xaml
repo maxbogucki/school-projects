@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam_Bogucki.MainPage"
+             Title="" BackgroundColor="White">
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="DarkOrange" StrokeThickness="2" BackgroundColor="DarkOrange" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <StackLayout>
+                <Label Text="Compass Travel" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+            </StackLayout>
+        </Border>
+    
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Image Source="compass_logo.png" HorizontalOptions="Center" WidthRequest="350" />
+
+                <Picker x:Name="DestinationPicker" Title="Choose Your Destination" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Center" SelectedIndexChanged="OnDestinationSelected"/>
+
+                <BoxView x:Name="DestinationBoxTop" Color="Black" HeightRequest="2" IsVisible="False"/>
+                <Label x:Name="DestinationLabel" Text="" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Center" IsVisible="False"/>
+                <BoxView x:Name="DestinationBoxBottom" Color="Black" HeightRequest="2" IsVisible="False"/>
+
+                <Button x:Name="TravelGuideButton" Text="Travel Guide" FontSize="18" FontAttributes="Bold" BackgroundColor="DarkOrange" TextColor="White" IsVisible="False" Clicked="OnTravelGuideButtonClicked"/>
+                <Button x:Name="NewsButton" Text="Local News" FontSize="18" FontAttributes="Bold" BackgroundColor="DarkOrange" TextColor="White" IsVisible="False" Clicked="OnNewsButtonClicked" />
+                <Button x:Name="WeatherButton" Text="Local Weather" FontSize="18" FontAttributes="Bold" BackgroundColor="DarkOrange" TextColor="White" IsVisible="False" Clicked="OnWeatherButtonClicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

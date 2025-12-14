@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FinalExam_Bogucki.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FinalExam_Bogucki"
+    Title="FinalExam_Bogucki" BackgroundColor="DarkOrange" ForegroundColor="White">
+
+    <TabBar
+        Shell.TabBarBackgroundColor="White"
+        Shell.TabBarTitleColor="DarkOrange"
+        Shell.TabBarForegroundColor="DarkOrange"
+        Shell.TabBarUnselectedColor="Black">
+
+        <Tab Title="Trave" Icon="travel_icon.png">
+            <ShellContent
+                Title="Travel"
+                ContentTemplate="{DataTemplate local:MainPage}" /> 
+        </Tab>
+
+        <Tab Title="Settings" Icon="settings_icon.png">
+            <ShellContent
+                Title="Settings"
+                ContentTemplate="{DataTemplate local:Pages.SettingsPage}" /> 
+        </Tab>
+
+        <Tab Title="About" Icon="about_icon.png">
+            <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:Pages.AboutPage}" /> 
+        </Tab>
+    </TabBar>
+
+</Shell>

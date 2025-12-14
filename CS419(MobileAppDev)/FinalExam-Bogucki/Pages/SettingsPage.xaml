@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam_Bogucki.Pages.SettingsPage"
+             Title="" BackgroundColor="White">
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="DarkOrange" StrokeThickness="2" BackgroundColor="DarkOrange" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <StackLayout>
+                <Label Text="Settings" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+            </StackLayout>
+        </Border>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Button x:Name="ResetDestinationButton" Text="Reset Destination" FontSize="18" FontAttributes="Bold" BackgroundColor="LightGray" TextColor="Black" IsEnabled="False" Clicked="OnResetDestinationButtonClicked"/>
+                <Button x:Name="ResetNewsCategoryButton" Text="Reset News Category" FontSize="18" FontAttributes="Bold" BackgroundColor="LightGray" TextColor="Black" IsEnabled="False" Clicked="OnResetNewsCategoryButtonClicked"/>
+                
+                <Label Text="&#10;News Category:" FontSize="22" FontAttributes="Bold"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Business" FontSize="18" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="BusinessSwitch" IsToggled="False" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="Entertainment" FontSize="18" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="EntertainmentSwitch" IsToggled="False" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="General" FontSize="18" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="GeneralSwitch" IsToggled="False" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="Health" FontSize="18" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="HealthSwitch" IsToggled="False" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="Science" FontSize="18" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="ScienceSwitch" IsToggled="False" Grid.Row="4" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="Sports" FontSize="18" Grid.Row="5" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="SportsSwitch" IsToggled="False" Grid.Row="5" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+
+                    <Label Text="Technology" FontSize="18" Grid.Row="6" Grid.Column="0" VerticalOptions="Center"/>
+                    <Switch x:Name="TechnologySwitch" IsToggled="False" Grid.Row="6" Grid.Column="1" HorizontalOptions="End" Toggled="SaveNewsCategory"/>
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

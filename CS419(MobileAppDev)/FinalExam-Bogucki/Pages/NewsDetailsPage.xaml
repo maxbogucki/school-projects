@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam_Bogucki.Pages.NewsDetailsPage"
+             Title="Local News" BackgroundColor="White">
+    
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <ScrollView>
+            <VerticalStackLayout Padding="10" Spacing="10">
+                <!-- ### The Activity Indicator ### -->
+                <ActivityIndicator x:Name="BusyIndicator" IsVisible="False" IsRunning="False" Color="Blue" VerticalOptions="Center" HorizontalOptions="Center"/>
+                
+                <!-- ### Webview to display the content frorm the URL -->
+                <WebView x:Name="NewsWebView" Source="{Binding URL}"
+                         Navigating="OnWebViewNavigating"
+                         Navigated="OnWebViewNavigated" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

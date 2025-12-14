@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam_Bogucki.Pages.AboutPage"
+             Title="" BackgroundColor="White">
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="DarkOrange" StrokeThickness="2" BackgroundColor="DarkOrange" Padding="20" HorizontalOptions="Fill" VerticalOptions="Start" Margin="0">
+            <StackLayout>
+                <Label Text="About the App" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" TextColor="White"/>
+            </StackLayout>
+        </Border>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <Label Text="Compass Travel App" FontSize="22" FontAttributes="Bold"/>
+
+                <Label Text="Max Bogucki&#10;CS 419-01 25FA&#10;Mobile Application Development&#10;Final Exam" FontSize="18"/>
+                <Label Text="Elmhurst University&#10;December 14, 2024" FontSize="18"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
